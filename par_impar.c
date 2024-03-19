@@ -9,7 +9,7 @@ int leer_numero(){
 
 int main(){
 	int numero = leer_numero();
-	if(numero<0) printf("El número debe ser positivo para poder descender\n"); return 1;//asume número positivo; si no es positivo, no se puede descender hasta el 0
+	if(numero<0){ printf("El número debe ser positivo para poder descender\n"); return 1;}//asume número positivo; si no es positivo, no se puede descender hasta el 0
 	printf("%d\n", numero);
 	while(numero>1){
 		numero-=2;
